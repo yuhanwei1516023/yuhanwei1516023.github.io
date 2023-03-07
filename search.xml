@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>php学习1</title>
+      <link href="/php%E5%AD%A6%E4%B9%A01.html"/>
+      <url>/php%E5%AD%A6%E4%B9%A01.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="php语法"><a href="#php语法" class="headerlink" title="php语法"></a>php语法</h2><p>设置常量，使用 define() 函数，函数语法如下：<br>bool define ( string $name , mixed $value [, bool $case_insensitive &#x3D; false ] )<br>常量定义后默认是全局，即使定义在函数外也可在函数内部使用<br>Php并置运算符：（.)用于将两个字符串连接在一起，<br>Strpos（）函数用于查找字符串中的一个字符或一段指定文本，若找到则返回匹配的首字符位置，若找不到则返回false（字符串的首字符位置为0）<br><img src="/img/php1.png"></p><p>若第一次取反后是正数则直接计算取反后的十进制数即可<br>var_dump()———&gt;&gt;输出展示展示代码内容，结构与类型<br>a.&#x3D;b等同于a&#x3D;a.b，即两个字符串相连的结果<br>(expr1) ? (expr2) : (expr3)<br>对 expr1 求值为 TRUE 时的值为 expr2，在 expr1 求值为 FALSE 时的值为 expr3<br>PHP_EOL 是一个换行符<br>$c &#x3D; $a &lt;&#x3D;&gt; $b：如果 $a &gt; $b, 则 $c 的值为 1；如果 $a &#x3D;&#x3D; $b, 则 $c 的值为 0；如果 $a &lt; $b, 则 $c 的值为 -1</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> php </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>yh w</title>
       <link href="/yh-w.html"/>
       <url>/yh-w.html</url>
