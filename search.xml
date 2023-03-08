@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>php学习2</title>
+      <link href="/php%E5%AD%A6%E4%B9%A02.html"/>
+      <url>/php%E5%AD%A6%E4%B9%A02.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="PHP-数组"><a href="#PHP-数组" class="headerlink" title="PHP 数组"></a>PHP 数组</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$cars=array(&quot;Volvo&quot;,&quot;BMW&quot;,&quot;Toyota&quot;);</span><br><span class="line">echo &quot;I like &quot; . $cars[0] . &quot;, &quot; . $cars[1] . &quot; and &quot; . $cars[2] . &quot;.&quot;;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure><p>在 PHP 中，array() 函数用于创建数组</p><h3 id="获取数组的长度-count-函数"><a href="#获取数组的长度-count-函数" class="headerlink" title="获取数组的长度 - count() 函数"></a>获取数组的长度 - count() 函数</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$cars=array(&quot;Volvo&quot;,&quot;BMW&quot;,&quot;Toyota&quot;);</span><br><span class="line">echo count($cars);</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure><h3 id="遍历数值数组"><a href="#遍历数值数组" class="headerlink" title="遍历数值数组"></a>遍历数值数组</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$cars=array(&quot;Volvo&quot;,&quot;BMW&quot;,&quot;Toyota&quot;);</span><br><span class="line">$arrlength=count($cars);</span><br><span class="line"> </span><br><span class="line">for($x=0;$x&lt;$arrlength;$x++)</span><br><span class="line">&#123;</span><br><span class="line">    echo $cars[$x];</span><br><span class="line">    echo &quot;&lt;br&gt;&quot;;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure><h3 id="PHP-关联数组"><a href="#PHP-关联数组" class="headerlink" title="PHP 关联数组"></a>PHP 关联数组</h3><p>这里有两种创建关联数组的方法：<br>$age&#x3D;array(“Peter”&#x3D;&gt;”35”,”Ben”&#x3D;&gt;”37”,”Joe”&#x3D;&gt;”43”);<br>or:<br>$age[‘Peter’]&#x3D;”35”;<br>$age[‘Ben’]&#x3D;”37”;<br>$age[‘Joe’]&#x3D;”43”;</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$age=array(&quot;Peter&quot;=&gt;&quot;35&quot;,&quot;Ben&quot;=&gt;&quot;37&quot;,&quot;Joe&quot;=&gt;&quot;43&quot;);</span><br><span class="line">echo &quot;Peter is &quot; . $age[&#x27;Peter&#x27;] . &quot; years old.&quot;;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure><h3 id="PHP-数组排序"><a href="#PHP-数组排序" class="headerlink" title="PHP 数组排序"></a>PHP 数组排序</h3><p>sort() - 对数组进行升序排列<br>rsort() - 对数组进行降序排列<br>asort() - 根据关联数组的值，对数组进行升序排列<br>ksort() - 根据关联数组的键，对数组进行升序排列<br>arsort() - 根据关联数组的值，对数组进行降序排列<br>krsort() - 根据关联数组的键，对数组进行降序排列<br>$arr &#x3D; (‘a’&#x3D;&gt;’apple’,’b’&#x3D;&gt;’banana’);其中，a、b 是这个数组的键值，apple、banana 是值。<br>php 数组的键值可以是字符串，可以是数字，也可以从任何一个数字开始作为数组的键值开端。<br>$arr &#x3D; array(0,1,2);像这个数组，键值没有出现，那么键值就是默认的从 0 开始，等同于 $arr &#x3D; array(0&#x3D;&gt;0,1&#x3D;&gt;1,2&#x3D;&gt;2)</p><h3 id="PHP-超级全局变量"><a href="#PHP-超级全局变量" class="headerlink" title="PHP 超级全局变量"></a>PHP 超级全局变量</h3><p>PHP中预定义了几个超级全局变量（superglobals） ，这意味着它们在一个脚本的全部作用域中都可用。 你不需要特别说明，就可以在函数及类中使用。<br>以下列举出几个常用超级全局变量：</p><h3 id="PHP-GLOBALS"><a href="#PHP-GLOBALS" class="headerlink" title="PHP $GLOBALS"></a>PHP $GLOBALS</h3><p>$GLOBALS 是PHP的一个超级全局变量组，在一个PHP脚本的全部作用域中都可以访问。<br>$GLOBALS 是一个包含了全部变量的全局组合数组。变量的名字就是数组的键。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> php </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>php学习1</title>
       <link href="/php%E5%AD%A6%E4%B9%A01.html"/>
       <url>/php%E5%AD%A6%E4%B9%A01.html</url>
