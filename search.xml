@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>sqlilabs</title>
+      <link href="/sqlilabs.html"/>
+      <url>/sqlilabs.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="sqlilabs靶场介绍"><a href="#sqlilabs靶场介绍" class="headerlink" title="sqlilabs靶场介绍"></a>sqlilabs靶场介绍</h2><p>SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，<br>用来学习sql注入的一个游戏教程。<br>原文链接：<a href="https://blog.csdn.net/Joker_Dgh/article/details/123913722">https://blog.csdn.net/Joker_Dgh/article/details/123913722</a></p><h2 id="进入靶场"><a href="#进入靶场" class="headerlink" title="进入靶场"></a>进入靶场</h2><p><img src="/img/9.png"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>php学习2</title>
       <link href="/php%E5%AD%A6%E4%B9%A02.html"/>
       <url>/php%E5%AD%A6%E4%B9%A02.html</url>
